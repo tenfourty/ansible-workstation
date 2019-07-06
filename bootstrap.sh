@@ -10,4 +10,6 @@ echo "Installing ansible and git"
 
 dnf install -y ansible
 
+echo "Running ansible-pull to configure the workstation"
+
 ansible-pull -U https://github.com/tenfourty/ansible-workstation.git
