@@ -1,4 +1,5 @@
 ---
 
 packages:
-- git
+ - git
+ - lzip
