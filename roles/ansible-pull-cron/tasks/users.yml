@@ -3,6 +3,10 @@
 
 # consider using ansible galaxy role - https://galaxy.ansible.com/weareinteractive/sudo
 
-- name: copy sudoers_ansible
-  copy: src=files/sudoers_ansible dest=/etc/sudoers.d/ansible owner=root group=root mode=0440
+- name: add ansible user to the sudoers
+  include_role: weareinteractive.sudo
+  vars:
+    sudo_users:
+      - name: 'ansible'
+        nopasswd: yes
 
