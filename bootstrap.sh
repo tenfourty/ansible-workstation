@@ -6,7 +6,7 @@
 # exit if a command fails
 set -e
 
-echo "Installing ansible and git"
+echo "Installing ansible"
 
 dnf install -y ansible
 
