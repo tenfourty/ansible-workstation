@@ -1,10 +1,8 @@
 ---
 
 - name: Configure my workstation using ansible-pull
-  hosts: local
-  user: root
+  hosts: localhost
   connection: local # or ssh or paramiko
-  become: true
   pre_tasks:
     - name: update packages
       package: name=* state=latest
