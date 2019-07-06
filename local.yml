@@ -1,13 +1,17 @@
 ---
-- hosts: localhost
+
+- name: Configure my workstation using ansible-pull
+  hosts: localhost
+  user: root
+  connection: local # or ssh or paramiko
   become: true
   pre_tasks:
     - name: update packages
       package: name=* state=latest
 
-  tasks:
-    - include: tasks/users.yml
-    - include: tasks/cron.yml
-    - include: tasks/packages.yml
-#    - include: tasks/gnome.yml
+
+
+  roles:
+    - workstation
+    - ansible-pull-cron
 
