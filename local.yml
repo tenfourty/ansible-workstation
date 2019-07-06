@@ -2,10 +2,10 @@
 
 - name: Configure my workstation using ansible-pull
   hosts: localhost
-  connection=local
-  user=root
-  become=true
-  become_method=sudo
+  connection: local
+  user: root
+  become: true
+  become_method: sudo
   pre_tasks:
     - name: update packages
       package: name=* state=latest
