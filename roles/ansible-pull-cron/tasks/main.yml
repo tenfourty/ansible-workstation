@@ -1,2 +1,2 @@
-- include: user.yml
+- include: users.yml
 - include: cron.yml

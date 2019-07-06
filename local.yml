@@ -7,6 +7,8 @@
   become: true
   become_method: sudo
   pre_tasks:
+    - name: get the ansible galaxy roles
+      command: ansible-galaxy install -r requirements.yml
     - name: update packages
       package: name=* state=latest
 

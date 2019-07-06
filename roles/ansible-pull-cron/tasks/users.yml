@@ -1,10 +1,11 @@
 - name: create ansible user
   user: name=ansible uid=900
 
-# consider using ansible galaxy role - https://galaxy.ansible.com/weareinteractive/sudo
+# using ansible galaxy role - https://galaxy.ansible.com/weareinteractive/sudo
 
 - name: add ansible user to the sudoers
-  include_role: weareinteractive.sudo
+  include_role:
+    name: weareinteractive.sudo
   vars:
     sudo_users:
       - name: 'ansible'
