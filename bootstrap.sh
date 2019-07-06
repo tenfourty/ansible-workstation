@@ -12,4 +12,4 @@ dnf install -y ansible
 
 echo "Running ansible-pull to configure the workstation"
 
-ansible-pull -i localhost -U https://github.com/tenfourty/ansible-workstation.git
+ansible-pull -U https://github.com/tenfourty/ansible-workstation.git
