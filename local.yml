@@ -1,7 +1,7 @@
 ---
 
 - name: Configure my workstation using ansible-pull
-  hosts: localhost
+  hosts: local
   user: root
   connection: local # or ssh or paramiko
   become: true
