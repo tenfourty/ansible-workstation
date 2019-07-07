@@ -6,4 +6,10 @@ wget -qO- https://raw.github.com/tenfourty/ansible-workstation/master/bootstrap.
 
 ```
 
+# Local dev/testing
 
+```shell
+sudo ansible-playbook local.yml
+
+```
+ 
