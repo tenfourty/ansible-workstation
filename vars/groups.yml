@@ -1,9 +1,9 @@
 ---
 
 groups:
- - @Development Tools
- - @LibreOffice
- - @GNOME
- - @Fonts
- - @Hardware Support
- - @Sound and Video
+ - "@Development Tools"
+ - "@LibreOffice"
+ - "@GNOME"
+ - "@Fonts"
+ - "@Hardware Support"
+ - "@Sound and Video"
