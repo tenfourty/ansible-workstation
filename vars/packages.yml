@@ -1,7 +1,6 @@
 ---
 
 packages:
- - Installed Packages
  - 3dprinter-udev-rules
  - CuraEngine-lulzbot
  - EvoPop-Azure-theme
